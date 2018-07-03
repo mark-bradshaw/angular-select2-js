@@ -1,8 +1,8 @@
-# Angular-Select2-Component
+# Angular-Select2-JS-Component
 
 ## Related Versions
 
-Angular-Select2-Component is baseed on these plugins and libs(version):
+Angular-Select2-Component is based on these plugins and libs(version):
 - [angular(>= 2.0-release)](https://angular.io/)
 - [jQuery](https://jquery.com/)
 - [select2](https://select2.github.io/)
@@ -12,7 +12,7 @@ Angular-Select2-Component is baseed on these plugins and libs(version):
 ### Install
 ``` cmd
 // npm install
-npm install angular-select2-component --save
+npm install angular-select2-js-component --save
 
 // if you have not installed jquery
 npm install jquery --save
@@ -25,7 +25,7 @@ npm install jquery --save
 // import NgModule
 import {NgModule} from '@angular/core';
 // import Select2Component
-import {Select2Component} from 'angular-select2-component';
+import {Select2Component} from 'angular-select2-js-component';
 
 @NgModule({
   // ...
@@ -40,19 +40,6 @@ export class YourModule {
 
 ``` html
 <select2 [options]="options" [settings]="{ setting: value }" [(ngModel)]="optionSelected" (onSelect)="onSelect($event)"></select2>
-```
-
-3. Compile settings.
-
-If you have set the `include` or `exclude` option in your `tsconfig.json`, you need to include the `node_modules/angular-select2-component/index.ts` file.
-
-``` json
-// tsconfig.json
-{
-  "include": [
-    "node_modules/angular-select2-component/index.ts"
-  ]
-}
 ```
 
 ### Options
